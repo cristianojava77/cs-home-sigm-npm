@@ -1,0 +1,38 @@
+{
+  "select": "Selecione...",
+  "login": {
+    "title": "Login",
+    "username": "Usuário",
+    "password": "Senha",
+    "submit": "Acessar"
+  },
+  "logout": "Logout",
+  "email": {
+    "label": "E-mail",
+    "invalid": "E-mail inválido"
+  },
+  "calendar": {
+    "date": "Data",
+    "year": "Ano",
+    "month": "Mês",
+    "day": "Dia",
+    "months": [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro"
+    ],
+    "shortMonths": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "weekdays": ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "format": "{{day}}/{{month}}/{{year}}",
+    "fullformat": "{{day}}/{{month}}/{{year}} {{hour}}:{{minute}}"
+  }
+}
