@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('sigm-npm app is running!');
+    expect(page.getTitleText()).toEqual('cs-home-sigm-npm app is running!');
   });
 
   afterEach(async () => {
