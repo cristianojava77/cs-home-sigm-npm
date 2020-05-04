@@ -1,1 +1,32 @@
-<p>person-list works!</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>{{ 'title.person.list' | translate }}</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <caption>Test</caption>
+            <thead>
+                <tr>
+                    <th>{{ 'person.id' | translate }}</th>
+                    <th>{{ 'person.name' | translate }}</th>
+                    <th>{{ 'person.phonemobile' | translate }}</th>
+                    <th>{{ 'person.emailpersonal' | translate }}</th>
+                    <th>{{ 'person.city' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let person of persons | async">
+                    <td>{{ person.id }}</td>
+                    <td>{{ person.name }}</td>
+                    <td>{{ person.phonemobile }}</td>
+                    <td>{{ person.emailpersonal }}</td>
+                    <td>{{ person.city }}</td>
+                    <td>
+                        <button (click)="delete(person.id)" class="btn btn-danger">Delete</button>
+                        <button (click)="view(person.id)" class="btn btn-info">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

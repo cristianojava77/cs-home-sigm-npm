@@ -1,0 +1,66 @@
+{
+  "title": {
+    "person": {
+      "create": "New Person",
+      "list": "Members List"
+    }
+  },
+  "button": {
+    "save": "Save"
+  },
+  "person": {
+    "id": "Code",
+    "city": "City",
+    "countrycode": "Country",
+    "datebirth": "Birth Date",
+    "district": "District",
+    "emailpersonal": "Personal e-mail",
+    "emailwork": "Professional e-mail",
+    "maritalstatuscode": "Marital Status",
+    "name": "Name",
+    "number": "Number",
+    "phonehome": "Home Phone",
+    "phonemobile": "Personal Mobile",
+    "phonework": "Professional Phone",
+    "statecode": "State",
+    "street": "Address",
+    "zipcode": "Zip Code"
+  },
+  "select": "Select...",
+  "login": {
+    "password": "Password",
+    "submit": "Submit",
+    "title": "Login",
+    "username": "Username"
+  },
+  "logout": "Logout",
+  "email": {
+    "label": "E-mail",
+    "invalid": "Invalid e-mail"
+  },
+
+  "calendar": {
+    "date": "Date",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "format": "{{month}}/{{day}}/{{year}}",
+    "fullformat": "{{month}}/{{day}}/{{year}} {{hour}}:{{minute}}"
+  }
+}

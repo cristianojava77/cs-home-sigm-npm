@@ -1,10 +1,37 @@
 {
+  "title": {
+    "person": {
+      "create": "Novo Cadastro",
+      "list": "Lista de Membros"
+    }
+  },
+  "button": {
+    "save": "Salvar"
+  },
+  "person": {
+    "id": "Código",
+    "city": "Cidade",
+    "countrycode": "País",
+    "datebirth": "Data de Nascimento",
+    "district": "Bairro",
+    "emailpersonal": "E-mail pessoal",
+    "emailwork": "E-mail profissional",
+    "maritalstatuscode": "Estado Civil",
+    "name": "Nome",
+    "number": "Número",
+    "phonehome": "Telefone Residencial",
+    "phonemobile": "Celular Pessoal",
+    "phonework": "Telefone Profissional",
+    "statecode": "Estado",
+    "street": "Endereço",
+    "zipcode": "CEP"
+  },
   "select": "Selecione...",
   "login": {
-    "title": "Login",
-    "username": "Usuário",
     "password": "Senha",
-    "submit": "Acessar"
+    "submit": "Acessar",
+    "title": "Login",
+    "username": "Usuário"
   },
   "logout": "Logout",
   "email": {

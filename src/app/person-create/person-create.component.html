@@ -1,1 +1,34 @@
-<p>person-create works!</p>
+<h2>{{ 'title.person.create' | translate }}</h2>
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">{{ 'person.name' | translate }}</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="person.name" />
+        </div>
+        <div class="form-group">
+            <label for="street">{{ 'person.street' | translate }}</label>
+            <input type="text" class="form-control" id="street" name="street" required [(ngModel)]="person.street" />
+        </div>
+        <div class="form-group">
+            <label for="district">{{ 'person.district' | translate }}</label>
+            <input type="text" class="form-control" id="district" name="district" required
+                [(ngModel)]="person.district" />
+        </div>
+        <div class="form-group">
+            <label for="city">{{ 'person.city' | translate }}</label>
+            <input type="text" class="form-control" id="city" name="city" required [(ngModel)]="person.city" />
+        </div>
+        <div class="form-group">
+            <label for="zipcode">{{ 'person.zipcode' | translate }}</label>
+            <input type="text" class="form-control" id="zipcode" name="zipcode" required [(ngModel)]="person.zipcode" />
+        </div>
+        <div class="form-group">
+            <label for="number">{{ 'person.number' | translate }}</label>
+            <input type="text" class="form-control" id="number" name="number" required [(ngModel)]="person.number" />
+        </div>
+        <button type="submit" class="btn btn-success">{{ 'button.save' | translate }}</button>
+    </form>
+</div>
+<div [hidden]="!submitted">
+    <h4>You submitted successfully!</h4>
+</div>
