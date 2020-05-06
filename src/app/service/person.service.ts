@@ -18,6 +18,10 @@ export class PersonService {
     return this.http.post(`${this.baseUrl}`, person);
   }
 
+  update(person: Person): Observable<any> {
+    return this.http.post(`${this.baseUrl}`, person);
+  }
+
   read(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }

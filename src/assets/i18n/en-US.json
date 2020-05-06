@@ -1,13 +1,27 @@
 {
-  "title": {
+  "button": {
+    "back": "Close",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save"
+  },
+  "menu": {
     "person": {
-      "create": "New Person",
+      "list": "Members",
+      "new": "New Member"
+    }
+  },
+  "title": {
+    "address": "Address",
+    "contacts": "Contacts",
+    "person": {
+      "create": "New Member",
+      "read": "Member Details",
+      "update": "Member Update",
       "list": "Members List"
     }
   },
-  "button": {
-    "save": "Save"
-  },
+
   "person": {
     "id": "Code",
     "city": "City",

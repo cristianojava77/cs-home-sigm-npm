@@ -28,13 +28,17 @@ export class PersonListComponent implements OnInit {
       .subscribe(
         data => {
           console.log(data);
-          this.reloadData();
         },
         error => console.log(error));
+    this.reloadData();
   }
 
-  view(id: number) {
-    this.router.navigate(['read', id]);
+  read(id: number) {
+    this.router.navigate(['person-read', id]);
+  }
+
+  update(id: number) {
+    this.router.navigate(['person-update', id]);
   }
 
 }

@@ -1,13 +1,27 @@
 {
-  "title": {
+  "button": {
+    "back": "Fechar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "save": "Salvar"
+  },
+  "menu": {
     "person": {
-      "create": "Novo Cadastro",
+      "list": "Membros",
+      "new": "Novo Membro"
+    }
+  },
+  "title": {
+    "address": "Endereço",
+    "contacts": "Contatos",
+    "person": {
+      "create": "Novo Membro  ",
+      "read": "Detalhes do Membro",
+      "update": "Atualizar Membro",
       "list": "Lista de Membros"
     }
   },
-  "button": {
-    "save": "Salvar"
-  },
+  
   "person": {
     "id": "Código",
     "city": "Cidade",
@@ -38,6 +52,7 @@
     "label": "E-mail",
     "invalid": "E-mail inválido"
   },
+
   "calendar": {
     "date": "Data",
     "year": "Ano",

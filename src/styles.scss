@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+h4 {
+    background-color: lightgray;
+    margin: 0;
+    padding: 4pt;
+}
+
+.btn {
+    margin: 4pt;
+    width: 75pt;
+}
+
+.btn-delete {
+    border: none;
+    border-radius: 3pt;
+    margin: 0;
+}
+
+.button-bar {
+    text-align: center;
+}

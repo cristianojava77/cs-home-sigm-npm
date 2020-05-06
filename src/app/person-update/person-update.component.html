@@ -1,1 +1,67 @@
-<p>person-update works!</p>
+<h2>{{ 'title.person.update' | translate }}</h2>
+<form (ngSubmit)="onSubmit()">
+    <!-- Basic data -->
+    <div class="form-group">
+        <label for="name">{{ 'person.name' | translate }}</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="person.name" [readonly]="disabled" />
+    </div>
+    <!-- Address -->
+    <h4>Address</h4>
+    <div class="form-group">
+        <label for="zipcode">{{ 'person.zipcode' | translate }}</label>
+        <input type="text" class="form-control" id="zipcode" name="zipcode" [(ngModel)]="person.zipcode"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="street">{{ 'person.street' | translate }}</label>
+        <input type="text" class="form-control" id="street" name="street" [(ngModel)]="person.street"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="number">{{ 'person.number' | translate }}</label>
+        <input type="text" class="form-control" id="number" name="number" [(ngModel)]="person.number"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="district">{{ 'person.district' | translate }}</label>
+        <input type="text" class="form-control" id="district" name="district" [(ngModel)]="person.district"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="city">{{ 'person.city' | translate }}</label>
+        <input type="text" class="form-control" id="city" name="city" [(ngModel)]="person.city" [readonly]="disabled" />
+    </div>
+    <!-- Contacts -->
+    <h4>Contacts</h4>
+    <div class="form-group">
+        <label for="emailpersonal">{{ 'person.emailpersonal' | translate }}</label>
+        <input type="text" class="form-control" id="emailpersonal" name="emailpersonal"
+            [(ngModel)]="person.emailpersonal" [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="emailwork">{{ 'person.emailwork' | translate }}</label>
+        <input type="text" class="form-control" id="emailwork" name="emailwork" [(ngModel)]="person.emailwork"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="phonehome">{{ 'person.phonehome' | translate }}</label>
+        <input type="text" class="form-control" id="phonehome" name="phonehome" [(ngModel)]="person.phonehome"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="phonemobile">{{ 'person.phonemobile' | translate }}</label>
+        <input type="text" class="form-control" id="phonemobile" name="phonemobile" [(ngModel)]="person.phonemobile"
+            [readonly]="disabled" />
+    </div>
+    <div class="form-group">
+        <label for="phonework">{{ 'person.phonework' | translate }}</label>
+        <input type="text" class="form-control" id="phonework" name="phonework" [(ngModel)]="person.phonework"
+            [readonly]="disabled" />
+    </div>
+    <!-- Button Bar -->
+    <div class="button-bar">
+        <button type="button" class="btn btn-primary" (click)="close()">{{ 'button.back' | translate }}</button>
+        <button type="button" class="btn btn-primary" (click)="enableUpdate()" [disabled]="!disabled">{{ 'button.edit' | translate }}</button>
+        <button type="submit" class="btn btn-success" [disabled]="disabled">{{ 'button.save' | translate }}</button>
+    </div>
+</form>

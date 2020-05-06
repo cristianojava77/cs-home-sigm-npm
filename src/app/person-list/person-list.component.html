@@ -3,27 +3,27 @@
         <h2>{{ 'title.person.list' | translate }}</h2>
     </div>
     <div class="panel-body">
-        <table class="table table-striped">
-            <caption>Test</caption>
+        <table class="table table-striped dataList">
+            <caption>person-list</caption>
             <thead>
                 <tr>
                     <th>{{ 'person.id' | translate }}</th>
                     <th>{{ 'person.name' | translate }}</th>
-                    <th>{{ 'person.phonemobile' | translate }}</th>
+                    <th class="text-center">{{ 'person.phonemobile' | translate }}</th>
                     <th>{{ 'person.emailpersonal' | translate }}</th>
                     <th>{{ 'person.city' | translate }}</th>
+                    <th class="text-center">{{ 'button.delete' | translate }}</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let person of persons | async">
+                <tr *ngFor="let person of persons | async" (click)="update(person.id)">
                     <td>{{ person.id }}</td>
                     <td>{{ person.name }}</td>
-                    <td>{{ person.phonemobile }}</td>
+                    <td class="text-center">{{ person.phonemobile }}</td>
                     <td>{{ person.emailpersonal }}</td>
                     <td>{{ person.city }}</td>
-                    <td>
-                        <button (click)="delete(person.id)" class="btn btn-danger">Delete</button>
-                        <button (click)="view(person.id)" class="btn btn-info">View</button>
+                    <td class="text-center">
+                        <button type="button" (click)="delete(person.id)" class="btn-delete btn-danger">X</button>
                     </td>
                 </tr>
             </tbody>

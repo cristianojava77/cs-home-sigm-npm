@@ -11,7 +11,6 @@ import { PersonService } from '../service/person.service';
 export class PersonCreateComponent implements OnInit {
 
   person: Person;
-  submitted = false;
 
   constructor(private personService: PersonService, private router: Router) { }
 
@@ -20,7 +19,6 @@ export class PersonCreateComponent implements OnInit {
   }
 
   newPerson(): void {
-    this.submitted = false;
     this.person = new Person();
   }
 
@@ -31,8 +29,8 @@ export class PersonCreateComponent implements OnInit {
   }
 
   onSubmit() {
-    this.submitted = true;
     this.save();
+    this.close();
   }
 
   close() {
