@@ -7,21 +7,21 @@
             <caption>person-list</caption>
             <thead>
                 <tr>
-                    <th>{{ 'person.id' | translate }}</th>
+                    <th class="display-full">{{ 'person.id' | translate }}</th>
                     <th>{{ 'person.name' | translate }}</th>
-                    <th class="text-center">{{ 'person.phonemobile' | translate }}</th>
-                    <th>{{ 'person.emailpersonal' | translate }}</th>
-                    <th>{{ 'person.city' | translate }}</th>
+                    <th class="text-center display-full">{{ 'person.phonemobile' | translate }}</th>
+                    <th class="display-full">{{ 'person.emailpersonal' | translate }}</th>
+                    <th class="display-full">{{ 'person.city' | translate }}</th>
                     <th class="text-center">{{ 'button.delete' | translate }}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let person of persons | async" (click)="update(person.id)">
-                    <td>{{ person.id }}</td>
+                    <td class="display-full">{{ person.id }}</td>
                     <td>{{ person.name }}</td>
-                    <td class="text-center">{{ person.phonemobile }}</td>
-                    <td>{{ person.emailpersonal }}</td>
-                    <td>{{ person.city }}</td>
+                    <td class="text-center display-full">{{ person.phonemobile }}</td>
+                    <td class="display-full">{{ person.emailpersonal }}</td>
+                    <td class="display-full">{{ person.city }}</td>
                     <td class="text-center">
                         <button type="button" (click)="delete(person.id)" class="btn-delete btn-danger">X</button>
                     </td>
