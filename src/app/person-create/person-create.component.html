@@ -7,6 +7,18 @@
     </div>
     <!-- Address -->
     <h4>{{ 'title.address' | translate }}</h4>
+
+
+
+
+    <div class="form-group">
+        <label for="zipcode">{{ 'person.zipcode' | translate }}</label>
+        <input type="text" class="form-control" id="zipcode" name="zipcode" required [(ngModel)]="person.zipcode" />
+    </div>
+
+    
+
+
     <div class="form-group">
         <label for="zipcode">{{ 'person.zipcode' | translate }}</label>
         <input type="text" class="form-control" id="zipcode" name="zipcode" required [(ngModel)]="person.zipcode" />

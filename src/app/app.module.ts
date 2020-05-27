@@ -7,7 +7,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonCreateComponent } from './person-create/person-create.component';
-import { PersonReadComponent } from './person-read/person-read.component';
 import { PersonUpdateComponent } from './person-update/person-update.component';
 import { PersonListComponent } from './person-list/person-list.component';
 
@@ -15,7 +14,6 @@ import { PersonListComponent } from './person-list/person-list.component';
   declarations: [
     AppComponent,
     PersonCreateComponent,
-    PersonReadComponent,
     PersonUpdateComponent,
     PersonListComponent
   ],

@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "cs-home-sigm-npm"
+  "defaultProject": "cs-home-sigm-npm",
+  "cli": {
+    "analytics": "69b32a2d-5b70-4598-bea5-e7809f9d3c2a"
+  }
 }

@@ -1,8 +1,10 @@
+/*
 h4 {
     background-color: lightgray;
     margin: 0;
     padding: 4pt;
 }
+*/
 
 .btn {
     margin: 4pt;
@@ -11,10 +13,48 @@ h4 {
 
 .btn-delete {
     border: none;
-    border-radius: 3pt;
+    border-radius: 4pt;
     margin: 0;
 }
 
 .button-bar {
     text-align: center;
+}
+
+/* NAVIGABLE LISTS
+=============================================================================================== */
+
+table.dataList tr td {
+    border-bottom: solid 1pt lightgray;
+    border-top: solid 1pt lightgray;
+    margin: 0;
+    padding: 4pt;
+}
+
+table.dataList tr th {
+    border: none;
+    margin: 0;
+    padding: 4pt;
+}
+
+/* FOOTER ADJUSTMENTS
+=============================================================================================== */
+.sigm-footer {
+    color: lightblue;
+    font-size: x-small;
+    margin: 0;
+    padding: 10pt;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* SMALL SCREEN ADJUSTMENTS
+=============================================================================================== */
+@media only screen and (max-width: 800px) {
+    
+    .display-full {
+        display:none;
+    }
+
 }
